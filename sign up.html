@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    
+    .form-column {
+      flex: 1;
+      padding: 20px;
+      background-color: #f2f2f2;
+    }
+    
+    .image-column {
+      flex: 1;
+      padding: 20px;
+      background-color: #ffffff;
+    }
+    
+    h2 {
+      text-align: center;
+    }
+    
+    form {
+      margin-top: 100px;
+    }
+    
+    .form-group {
+      margin-bottom: 5px;
+    }
+    
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    input {
+      width: 100%;
+      padding: 1,5px;
+      border: 1px solid #6fb436;
+      border-radius: 4px;
+    }
+    
+    .submit-button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    .submit-button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="form-column">
+      <h2>Inscription à Ifri</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Nom :</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="matricule">Numéro Matricule :</label>
+            <input type="matricule" id="Numéro Matricule" name="Numéro Matricule" required>
+        </div>
+          <div class="form-group">
+              <label for="password">Mot de passe :</label>
+              <input type="password" id="password" name="password" required>
+          </div>
+          <div class="form-group">
+              <label for="confirmation">Confirmer le mot de passe :</label>
+              <input type="password" id="confirmation" name="confirmation" required>
+          </div>
+        <button type="submit" class="submit-button">S'inscrire</button>
+      </form>
+    </div>
+    <div class="image-column">
+      <img src="https://media.istockphoto.com/id/1224500457/fr/photo/contexte-de-technologie-abstraite-de-code-de-programmation-du-d%C3%A9veloppeur-de-logiciel-et-du.jpg?s=612x612&w=0&k=20&c=AU6PUcnO2Xo9vQNL2dpvQOOMaI1IzN-rxv9kDp618Ng=" alt="Image d'illustration">
+    </div>
+  </div>
+</body>
+</html>
